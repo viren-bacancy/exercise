@@ -1,10 +1,9 @@
-print "Enter weight:"
+print "Enter weight in kg:"
 weight = gets.chomp
 
-print "Enter height:"
+print "Enter height in cm:"
 height = gets.chomp
 
-puts 10 ** 2
-puts  (weight.to_i * 703) / (height.to_i ** 2)
+bmi = (weight.to_f * 703) / (height.to_f ** 2)
 
-#print "Your BMI Index is #{bmi}"
+puts "Your BMI Index is #{bmi.to_f}"

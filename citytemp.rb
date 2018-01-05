@@ -22,22 +22,15 @@ while i <= n
 	i += 1
 end	
 
-def dsort (arr)
-	arr.each do |i|
-		if arr[i] < arr[i+1]
-			arr[i],arr[i+1] = arr[i+1],arr[i]
-		end
-	end
-#	puts "Array in descending order "
-#	arr.each do |j|
-#		puts j
-#	end
-	arr
+for a in (0..fcity.size)
+        if(fcity[a] < fcity[a+1])
+            fcity[a], fcity[a+1] = fcity[a+1], fcity[a] 
+        end
 end
-dsort(fcity)
-dsort(ccity)
-#fcity.each do |j|
-#	puts j	
+
+fcity.each do |j|
+	puts j
+end	
 #for k in ccity
 #	puts k
 #end
